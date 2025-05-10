@@ -95,11 +95,6 @@
     <QtRcc Include="GymPadelSystem.qrc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\Recourses\Gym.png" />
-    <Image Include="..\..\Recourses\not.png" />
-    <Image Include="Gym.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="Gym Padel System.rc" />
   </ItemGroup>
   <ItemGroup>

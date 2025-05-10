@@ -14,7 +14,7 @@
    <string>MemberLoggedInPage</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(&quot;D:/Recourses/Gym.png&quot;);</string>
+   <string notr="true">background-image: url(&quot;:/GymPadelSystem/Resources/Gym.png&quot;);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="widget" native="true">
@@ -43,7 +43,7 @@ Background-color: rgba(0,0,0,0.85);</string>
       <string notr="true">QPushButton{
 background: none;
 background-color: rgba(0,0,0,0.8);
-background-image: url(&quot;D:/Recourses/not.png&quot;);
+background-image: url(&quot;:/GymPadelSystem/Resources/not.png&quot;);
 border: 0px solid transparent;
 }
 QPushButton:hover
@@ -74,7 +74,7 @@ border: 1px solid rgb(0, 0, 0);
       <string notr="true">QPushButton{
 background: none;
 background-color: rgba(0,0,0,0.8);
-background-image: url(&quot;D:/Recourses/profile.png&quot;);
+background-image: url(&quot;:/GymPadelSystem/Resources/Profile.png&quot;);
 border: 0px solid transparent;
 }
 QPushButton:hover

@@ -28,17 +28,6 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\Recourses\Gym.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\Recourses\not.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Gym.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <ResourceCompile Include="Gym Padel System.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>

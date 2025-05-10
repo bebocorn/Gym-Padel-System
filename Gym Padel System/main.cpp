@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 	BookingSystem::checkSlotTimePassed();
 
     QApplication GymPadelSystem(argc, argv);
-	Slot s;
 	LoginPage MainWindow;
     MainWindow.showFullScreen();
 

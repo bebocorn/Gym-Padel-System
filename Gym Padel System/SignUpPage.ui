@@ -14,7 +14,7 @@
    <string>SignUpPage</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(&quot;D:/Recourses/Gym.png&quot;);</string>
+   <string notr="true">background-image: url(&quot;:/GymPadelSystem/Resources/Gym.png&quot;);</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="SUWidget" native="true">
