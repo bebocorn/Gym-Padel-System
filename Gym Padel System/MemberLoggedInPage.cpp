@@ -170,7 +170,6 @@ void MemberLoggedInPage::OkClicked()
 void MemberLoggedInPage::RenewPlanButtonClicked()
 {
 	setAllWidgetsVisibleFalse();
-	ui.RenewPlanWidget->setGeometry(530, 320, 441, 211);
 	int newPrice;
 	bool isOneWeek = Date::oneOrMoreWeekLeft(Date::getTodaysDate(), FileManager::members[MemberID].getEndDate());
 	if (FileManager::members[MemberID].getPlanName() == "")
@@ -191,7 +190,7 @@ void MemberLoggedInPage::RenewPlanButtonClicked()
 		newPrice = ReadData::getPrice(FileManager::members[MemberID].getPlanName());
 		FileManager::members[MemberID].setTotalPaid(FileManager::members[MemberID].getTotalPaid() + newPrice);
 		QString np = QString::number(newPrice);
-		ui.RenewPlanWidgetTxtEdit->setText("The price is " + np + " due to early renewal\nAre you sure you want to renew?");
+		ui.RenewPlanWidgetTxtEdit->setText("The price is " + np + "\nAre you sure you want to renew?");
 		ui.RenewPlanWidget->setVisible(true);
 	}
 }
@@ -583,7 +582,7 @@ void MemberLoggedInPage::CheckButtonClicked()
 		bool Valid = (Date::getTodaysDate() == slotDate) and !(Date::isHourInPast(hour));
 
 
-		if (!(Date::isFutureDate(slotDate)) && !Valid)
+		if (!(Date::isFutureDate(slotDate)) && !Valid || hour < 0 || hour > 23 || day < 1 || day > 31 || month < 1 || month > 12)
 		{
 			ui.ErrorMsgP->setText("Invalid Date");
 			ui.ErrorMsgP->setVisible(true);
@@ -651,7 +650,7 @@ void MemberLoggedInPage::BookCourtButtonClicked()
 	bool Valid = (Date::getTodaysDate() == slotDate) and !(Date::isHourInPast(hour));
 
 
-	if (!(Date::isFutureDate(slotDate)) && !Valid)
+	if (!(Date::isFutureDate(slotDate)) && !Valid || hour < 0 || hour > 23 || day < 1 || day > 31 || month < 1 || month > 12)
 	{
 		ui.ErrorMsgP->setText("Invalid Date");
 		ui.ErrorMsgP->setVisible(true);
@@ -680,11 +679,11 @@ void MemberLoggedInPage::BookCourtButtonClicked()
 		QString price = QString::number(p);
 		ui.DoneMsgLabel->setText("Slot Price is : " + price);
 		ui.DoneMsg->setVisible(true);
-		ui.DayTxtBox->setText("");
-		ui.MonthTxtBox->setText("");
-		ui.YearTxtBox->setText("");
-		ui.SlotTxtBox->setText("");
-		ui.CourtNumberTxtBox->setText("");
+		ui.DayTxtBox->clear();
+		ui.MonthTxtBox->clear();
+		ui.YearTxtBox->clear();
+		ui.SlotTxtBox->clear();
+		ui.CourtNumberTxtBox->clear();
 		ui.CheckButton->setGeometry(60, 350, 201, 50);
 		ui.BookCourtButton->setGeometry(60, 440, 201, 50);
 		ui.AvailableMsgP->setVisible(false);

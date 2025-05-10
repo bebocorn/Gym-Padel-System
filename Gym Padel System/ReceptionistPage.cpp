@@ -6,6 +6,7 @@ ReceptionistPage::ReceptionistPage(QWidget* parent)
 	ui.setupUi(this);
 	ui.IMLabel->setVisible(false);
 	ui.tableWidget->setVisible(true);
+	ui.tableWidget->setRowHeight(0, 60);
 
 	//Connect Buttons
 	connect(ui.ExitButton, &QPushButton::clicked, this, &ReceptionistPage::ExitButtonClicked);

@@ -361,7 +361,7 @@
         "End Date": {
             "Day": 9,
             "Month": 5,
-            "Year": 2027
+            "Year": 2028
         },
         "First Name": "Abanoub",
         "ID": 21,
@@ -376,8 +376,27 @@
             "Leg Day"
         ],
         "Plan": "Ultimate",
-        "Slots": [],
-        "Total Paid": 400,
+        "Slots": [
+            {
+                "Court ID": 5,
+                "Date": {
+                    "Day": 15,
+                    "Month": 12,
+                    "Year": 2027
+                },
+                "Hour": 5
+            },
+            {
+                "Court ID": 5,
+                "Date": {
+                    "Day": 15,
+                    "Month": 12,
+                    "Year": 2028
+                },
+                "Hour": 25
+            }
+        ],
+        "Total Paid": 15090,
         "VIP": true,
         "Visits": 0
     },
@@ -540,6 +559,54 @@
         "Inbox": [],
         "Last Name": "Rabeh",
         "Middle Name": "Asaad",
+        "Past Workouts": [],
+        "Plan": "",
+        "Slots": [],
+        "Total Paid": 0,
+        "VIP": false,
+        "Visits": 0
+    },
+    "27": {
+        "Birth Date": {
+            "Day": 4,
+            "Month": 5,
+            "Year": 2005
+        },
+        "Classes": [],
+        "End Date": {
+            "Day": 10,
+            "Month": 5,
+            "Year": 2025
+        },
+        "First Name": "Mena",
+        "ID": 27,
+        "Inbox": [],
+        "Last Name": "Fahmy",
+        "Middle Name": "Adel",
+        "Past Workouts": [],
+        "Plan": "",
+        "Slots": [],
+        "Total Paid": 0,
+        "VIP": false,
+        "Visits": 0
+    },
+    "28": {
+        "Birth Date": {
+            "Day": 4,
+            "Month": 5,
+            "Year": 2005
+        },
+        "Classes": [],
+        "End Date": {
+            "Day": 10,
+            "Month": 5,
+            "Year": 2025
+        },
+        "First Name": "Mena",
+        "ID": 28,
+        "Inbox": [],
+        "Last Name": "Fahmy",
+        "Middle Name": "Adel",
         "Past Workouts": [],
         "Plan": "",
         "Slots": [],
