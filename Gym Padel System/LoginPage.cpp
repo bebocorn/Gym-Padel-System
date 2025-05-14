@@ -1,6 +1,7 @@
 #include "LoginPage.h"
 #include <string>
 #include "FileManager.h"
+
 using namespace std;
 
 LoginPage::LoginPage(QWidget *parent)

@@ -53,8 +53,10 @@ public:
 	static unordered_map<int, Staff*>staff;
 	static bool reset;
 	static vector<ClassSession> getSessions(string className);
-	static bool AlreadyInClass(long long MemberID, long long ClassID);
 	static long long GetMemberClassID(long long MemberID, string ClassName);
+	static bool AlreadyInClass(long long MemberID, long long ClassID);
+	static set<Slot> getBookedSlots();
+
 
 	static void Load();
 	static void Save();

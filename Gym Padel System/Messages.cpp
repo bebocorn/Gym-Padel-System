@@ -2,7 +2,7 @@
 
 string Messages::earlyRenewal()
 {
-    return "Your Gym Membership Ends In 1 Week, Renew To Stay Active!";
+    return "Your Gym Membership Is About To End, Renew To Stay Active!";
 }
 
 string Messages::addedTo(string className)

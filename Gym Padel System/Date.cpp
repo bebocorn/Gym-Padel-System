@@ -133,7 +133,7 @@ bool Date::oneWeekLeft(const Date& a, const Date& b)
     time_t time1 = std::mktime(&date1);
     time_t time2 = std::mktime(&date2);
     double diff = difftime(time2, time1);
-    return diff == 7 * 24 * 60 * 60;
+    return diff <= 7 * 24 * 60 * 60;
 }
 
 bool Date::oneOrMoreWeekLeft(const Date& a, const Date& b)
@@ -192,6 +192,6 @@ bool Date::operator<(const Date& date) const
     if (year != date.getYear())
         return year < date.getYear();
     if (month != date.getMonth())
-        return year < date.getMonth();
+        return month < date.getMonth();
     return day < date.getDay();
 }

@@ -1,5 +1,4 @@
 #include "Receptionist.h"
-
 Receptionist::Receptionist() {}
 
 Receptionist::Receptionist(string firstName, string middleName, string lastName, int id, int Salary) : Staff(firstName, middleName, lastName, Date(), id, Salary)
@@ -9,7 +8,7 @@ void Receptionist::sendRenewalNoti()
 {
 	for (int i = 1; i <= FileManager::members.size(); i++)
 	{
-		if (Date::oneWeekLeft(Date::getTodaysDate(), FileManager::members[i].getEndDate()))
+		if (Date::oneWeekLeft(Date::getTodaysDate(), FileManager::members[i].getEndDate()) && FileManager::members[i].getPlanName() != "")
 			FileManager::members[i].pushMessage(Messages::earlyRenewal());
 	}
 }

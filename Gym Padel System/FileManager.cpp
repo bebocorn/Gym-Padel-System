@@ -1,7 +1,6 @@
 #include "FileManager.h"
-#include"Manager.h";
-#include"Receptionist.h";
-
+#include"Manager.h"
+#include"Receptionist.h"
 
 // ifstream -> read
 // ofstream -> write
@@ -48,6 +47,20 @@ bool FileManager::AlreadyInClass(long long MemberID, long long ClassID)
 		it++;
 	}
 	return false;
+}
+
+set<Slot> FileManager::getBookedSlots()
+{
+	set<Slot>bookedSlots;
+	auto it = members.begin();
+	while (it != members.end())
+	{
+		set<Slot>currentMember = members[it->first].getSlots();
+		for (auto x = currentMember.begin(); x != currentMember.end(); x++)
+			bookedSlots.insert(*x);
+		it++;
+	}
+	return bookedSlots;
 }
 
 long long FileManager::GetMemberClassID(long long MemberID, string ClassName)
@@ -120,6 +133,11 @@ void FileManager::saveAccounts()
 	while (it != members.end())
 	{
 		string id = to_string(it->second.getID());
+		if (id == "0")
+		{
+			it++;
+			continue;
+		}
 		Accounts[id] = it->second;
 		it++;
 	}

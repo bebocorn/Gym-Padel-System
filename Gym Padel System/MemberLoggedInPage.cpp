@@ -80,6 +80,7 @@ MemberLoggedInPage::MemberLoggedInPage(Slot slotMember,long long mID, QWidget *p
 
 	//Notification Widget
 	connect(ui.NotificationButton, &QPushButton::clicked, this, &MemberLoggedInPage::NotificationButtonClicked);
+	connect(ui.NotificationButtonDot, &QPushButton::clicked, this, &MemberLoggedInPage::NotificationButtonDotClicked);
 	connect(ui.ExitNWButton, &QPushButton::clicked, this, &MemberLoggedInPage::ExitNWButtonClicked);
 
 }
@@ -706,10 +707,11 @@ void MemberLoggedInPage::CancelBookingButtonClicked()
 	ui.ConfirmCancelBookingButton->setGeometry(120, 300, 141, 50);
 	ui.CancelBookingMsgE->setVisible(false);
 	ui.CancelBookingWidget->setVisible(true);
-	ui.CancelBookingTextBox->setText("");
+	ui.BookingToCancelTxtBox->setText("");
 
 	set<Slot>CurrentMemberSlots = FileManager::members[MemberID].getSlots();
 	int count = 1;
+	ui.CancelBookingTextBox->setText("");
 	for (auto it = CurrentMemberSlots.begin(); it != CurrentMemberSlots.end(); it++)
 	{
 		QString n = QString::number(count);
@@ -740,21 +742,20 @@ void MemberLoggedInPage::ConfirmCancelBookingButtonClicked()
 	set<Slot> currentMemberSlots = FileManager::members[MemberID].getSlots();
 	if (ui.BookingToCancelTxtBox->text() != "" && index >= 1 && index <= currentMemberSlots.size())
 	{
-		for (auto it = currentMemberSlots.begin(); it != currentMemberSlots.end(); it++)
+		auto it = currentMemberSlots.begin();
+		advance(it, index - 1);
+		if (BookingSystem::cancelBooking(MemberID, *it))
 		{
-			if (BookingSystem::cancelBooking(MemberID, *it))
-			{
-				ExitCBWButtonClicked();
-				ui.DoneMsgLabel->setText("Done!");
-				ui.DoneMsg->setVisible(true);
-			}
-			else
-			{
-				ui.CancelBookingMsgE->setText("Sorry, Too late to cancel!");
-				ui.CancelBookingWidget->setGeometry(590, 210, 371, 420);
-				ui.ConfirmCancelBookingButton->setGeometry(120, 350, 141, 50);
-				ui.CancelBookingMsgE->setVisible(true);
-			}
+			ExitCBWButtonClicked();
+			ui.DoneMsgLabel->setText("Done!");
+			ui.DoneMsg->setVisible(true);
+		}
+		else
+		{
+			ui.CancelBookingMsgE->setText("Sorry, Too late to cancel!");
+			ui.CancelBookingWidget->setGeometry(590, 210, 371, 420);
+			ui.ConfirmCancelBookingButton->setGeometry(120, 350, 141, 50);
+			ui.CancelBookingMsgE->setVisible(true);
 		}
 	}
 	else
@@ -842,7 +843,7 @@ void MemberLoggedInPage::VIPConfirmButtonClicked()
 void MemberLoggedInPage::NotificationButtonClicked()
 {
 	setAllWidgetsVisibleFalse();
-
+	ui.NotificationTxtEdit->clear();
 	vector<string> notHistory = FileManager::members[MemberID].getInbox();
 
 
