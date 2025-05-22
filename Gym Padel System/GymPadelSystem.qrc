@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/GymPadelSystem">
+        <file>Resources/Profile.png</file>
+        <file>Resources/not.png</file>
+        <file>Resources/Gym.png</file>
+    </qresource>
+</RCC>

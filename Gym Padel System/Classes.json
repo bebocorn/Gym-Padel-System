@@ -1,0 +1,321 @@
+{
+    "1": {
+        "Capacity": 11,
+        "Class ID": 1,
+        "Day": "Friday",
+        "Members": [],
+        "Name": "Cardio",
+        "Price": 100,
+        "Time": "8 PM"
+    },
+    "10": {
+        "Capacity": 20,
+        "Class ID": 10,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "Powerlifting",
+        "Price": 160,
+        "Time": "11 AM"
+    },
+    "11": {
+        "Capacity": 10,
+        "Class ID": 11,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "Yoga",
+        "Price": 150,
+        "Time": "8 PM"
+    },
+    "12": {
+        "Capacity": 10,
+        "Class ID": 12,
+        "Day": "Saturday",
+        "Members": [],
+        "Name": "Dance",
+        "Price": 130,
+        "Time": "7 PM"
+    },
+    "13": {
+        "Capacity": 15,
+        "Class ID": 13,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "Dance",
+        "Price": 130,
+        "Time": "8 PM"
+    },
+    "14": {
+        "Capacity": 20,
+        "Class ID": 14,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "Dance",
+        "Price": 130,
+        "Time": "9 PM"
+    },
+    "15": {
+        "Capacity": 10,
+        "Class ID": 15,
+        "Day": "Monday",
+        "Members": [],
+        "Name": "Tabata",
+        "Price": 200,
+        "Time": "8 PM"
+    },
+    "16": {
+        "Capacity": 15,
+        "Class ID": 16,
+        "Day": "Tuesday",
+        "Members": [],
+        "Name": "Tabata",
+        "Price": 200,
+        "Time": "9 PM"
+    },
+    "17": {
+        "Capacity": 10,
+        "Class ID": 17,
+        "Day": "Tuesday",
+        "Members": [],
+        "Name": "CrossFit",
+        "Price": 120,
+        "Time": "11 AM"
+    },
+    "18": {
+        "Capacity": 15,
+        "Class ID": 18,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "CrossFit",
+        "Price": 120,
+        "Time": "12 PM"
+    },
+    "19": {
+        "Capacity": 10,
+        "Class ID": 19,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "CrossFit",
+        "Price": 120,
+        "Time": "8 PM"
+    },
+    "2": {
+        "Capacity": 10,
+        "Class ID": 2,
+        "Day": "Friday",
+        "Members": [],
+        "Name": "Dance",
+        "Price": 130,
+        "Time": "6 PM"
+    },
+    "20": {
+        "Capacity": 15,
+        "Class ID": 20,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "CrossFit",
+        "Price": 120,
+        "Time": "9 PM"
+    },
+    "21": {
+        "Capacity": 15,
+        "Class ID": 21,
+        "Day": "Saturday",
+        "Members": [
+            1
+        ],
+        "Name": "Powerlifting",
+        "Price": 160,
+        "Time": "12 PM"
+    },
+    "22": {
+        "Capacity": 10,
+        "Class ID": 22,
+        "Day": "Friday",
+        "Members": [],
+        "Name": "Powerlifting",
+        "Price": 160,
+        "Time": "7 PM"
+    },
+    "23": {
+        "Capacity": 15,
+        "Class ID": 23,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "Powerlifting",
+        "Price": 160,
+        "Time": "5 PM"
+    },
+    "24": {
+        "Capacity": 10,
+        "Class ID": 24,
+        "Day": "Tuesday",
+        "Members": [],
+        "Name": "Strength Training",
+        "Price": 190,
+        "Time": "1 AM"
+    },
+    "25": {
+        "Capacity": 15,
+        "Class ID": 25,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "Strength Training",
+        "Price": 190,
+        "Time": "2 PM"
+    },
+    "26": {
+        "Capacity": 20,
+        "Class ID": 26,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "Strength Training",
+        "Price": 190,
+        "Time": "3 PM"
+    },
+    "27": {
+        "Capacity": 25,
+        "Class ID": 27,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "Strength Training",
+        "Price": 190,
+        "Time": "4 PM"
+    },
+    "28": {
+        "Capacity": 10,
+        "Class ID": 28,
+        "Day": "Tuesday",
+        "Members": [],
+        "Name": "Cardio",
+        "Price": 100,
+        "Time": "2 AM"
+    },
+    "29": {
+        "Capacity": 15,
+        "Class ID": 29,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "Cardio",
+        "Price": 100,
+        "Time": "3 PM"
+    },
+    "3": {
+        "Capacity": 30,
+        "Class ID": 3,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "Pilates",
+        "Price": 230,
+        "Time": "10 AM"
+    },
+    "30": {
+        "Capacity": 20,
+        "Class ID": 30,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "Cardio",
+        "Price": 100,
+        "Time": "4 PM"
+    },
+    "31": {
+        "Capacity": 25,
+        "Class ID": 31,
+        "Day": "Wednesday",
+        "Members": [],
+        "Name": "Cardio",
+        "Price": 100,
+        "Time": "5 PM"
+    },
+    "32": {
+        "Capacity": 20,
+        "Class ID": 32,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "Yoga",
+        "Price": 150,
+        "Time": "3 PM"
+    },
+    "33": {
+        "Capacity": 25,
+        "Class ID": 33,
+        "Day": "Friday",
+        "Members": [
+            31
+        ],
+        "Name": "Yoga",
+        "Price": 150,
+        "Time": "4 PM"
+    },
+    "34": {
+        "Capacity": 20,
+        "Class ID": 34,
+        "Day": "Thursday",
+        "Members": [],
+        "Name": "Kickboxing",
+        "Price": 170,
+        "Time": "3 PM"
+    },
+    "35": {
+        "Capacity": 25,
+        "Class ID": 35,
+        "Day": "Friday",
+        "Members": [],
+        "Name": "MMA Conditioning",
+        "Price": 150,
+        "Time": "4 PM"
+    },
+    "4": {
+        "Capacity": 15,
+        "Class ID": 4,
+        "Day": "Monday",
+        "Members": [],
+        "Name": "Yoga",
+        "Price": 150,
+        "Time": "7 PM"
+    },
+    "5": {
+        "Capacity": 15,
+        "Class ID": 5,
+        "Day": "Monday",
+        "Members": [],
+        "Name": "CrossFit",
+        "Price": 120,
+        "Time": "10 AM"
+    },
+    "6": {
+        "Capacity": 20,
+        "Class ID": 6,
+        "Day": "Saturday",
+        "Members": [],
+        "Name": "Kickboxing",
+        "Price": 170,
+        "Time": "12 PM"
+    },
+    "7": {
+        "Capacity": 10,
+        "Class ID": 7,
+        "Day": "Sunday",
+        "Members": [],
+        "Name": "MMA Conditioning",
+        "Price": 190,
+        "Time": "6 PM"
+    },
+    "8": {
+        "Capacity": 5,
+        "Class ID": 8,
+        "Day": "Monday",
+        "Members": [],
+        "Name": "Tabata",
+        "Price": 200,
+        "Time": "3 PM"
+    },
+    "9": {
+        "Capacity": 10,
+        "Class ID": 9,
+        "Day": "Tuesday",
+        "Members": [],
+        "Name": "Strength Training",
+        "Price": 190,
+        "Time": "5 PM"
+    }
+}
