@@ -9,21 +9,34 @@
             21
         ],
         "End Date": {
-            "Day": 6,
-            "Month": 6,
-            "Year": 2025
+            "Day": 26,
+            "Month": 5,
+            "Year": 2026
         },
-        "First Name": "Youssef",
+        "First Name": "Ali",
         "ID": 1,
         "Inbox": [],
-        "Last Name": "Farid",
-        "Middle Name": "Fayek",
-        "Past Workouts": [],
-        "Plan": "Basic",
-        "Slots": [],
-        "Total Paid": 1420,
+        "Last Name": "Sameh",
+        "Middle Name": "Khaled",
+        "Past Workouts": [
+            "Upper/Lower Split",
+            "Leg Day"
+        ],
+        "Plan": "Ultimate",
+        "Slots": [
+            {
+                "Court ID": 6,
+                "Date": {
+                    "Day": 30,
+                    "Month": 5,
+                    "Year": 2025
+                },
+                "Hour": 6
+            }
+        ],
+        "Total Paid": 9385,
         "VIP": true,
-        "Visits": 0
+        "Visits": 3
     },
     "10": {
         "Birth Date": {
@@ -153,7 +166,7 @@
         },
         "Classes": [],
         "End Date": {
-            "Day": 21,
+            "Day": 26,
             "Month": 5,
             "Year": 2025
         },
@@ -380,7 +393,7 @@
         },
         "Classes": [],
         "End Date": {
-            "Day": 21,
+            "Day": 26,
             "Month": 5,
             "Year": 2025
         },
@@ -476,7 +489,7 @@
         },
         "Classes": [],
         "End Date": {
-            "Day": 24,
+            "Day": 26,
             "Month": 5,
             "Year": 2025
         },
@@ -489,7 +502,7 @@
         "Last Name": "Abdelrahamn",
         "Middle Name": "Malek",
         "Past Workouts": [],
-        "Plan": "Basic",
+        "Plan": "",
         "Slots": [],
         "Total Paid": 1200,
         "VIP": false,

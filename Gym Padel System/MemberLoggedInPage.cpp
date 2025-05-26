@@ -862,6 +862,19 @@ void MemberLoggedInPage::NotificationButtonClicked()
 	ui.NotificationTxtEdit->clear();
 	vector<string> notHistory = FileManager::members[MemberID].getInbox();
 
+	if (notHistory.size() <= 3)
+	{
+		ui.NotificationWidget->setGeometry(1110, 59, 361, 400);
+	}
+	else if (notHistory.size() <= 6)
+	{
+		ui.NotificationWidget->setGeometry(1110, 59, 361, 470);
+	}
+	else
+	{
+		ui.NotificationWidget->setGeometry(1110, 59, 361, 800);
+	}
+
 
 	for (int i = 0; i < notHistory.size(); i++)
 	{
